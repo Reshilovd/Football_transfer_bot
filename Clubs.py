@@ -1,50 +1,40 @@
 import requests
 from bs4 import BeautifulSoup
 import datetime as DT
-import re
 import time
 from random import randrange
 import pymysql
 import json
+from secondary_function import convert_price
+from secondary_function import getMonthByName
+from secondary_function import getFullURL
+from secondary_function import find_or_create
+from secondary_function import find_or_create_stadium
+from secondary_function import club_init
 
-
-headers = {"User-Agent":"Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Mobile Safari/537.36 Edg/95.0.1020.40"
-}
-
-# url = 'https://www.transfermarkt.ru/%D0%A3%D0%9F%D0%9B/startseite/wettbewerb/UKR1'
+headers = {"User-Agent":"Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Mobile Safari/537.36 Edg/95.0.1020.40"}
 
 store = {
-    'clubs': {
+        'clubs': {
 
-    },
-    'clubs_link': {
+        },
+        'clubs_link': {
 
+        },
+        'stadiums': {
 
-    },
-    'stadiums': {
+        },
 
-    },
+        'players_link': {
 
-    'players_link': {
+        },
 
-    },
+        'players_info': {
 
-    'players_info': {
+        }
 
     }
-
-}
-
-list_url =[]
-stadium_list = []
-
-getFullURL = lambda url: f"https://www.transfermarkt.ru{url}"
-
-def club_init(id):
-    return {
-        'name': '',
-        'logo': '',
-    }
+list_url = []
 
 def parsing_clubs_id_and_url(url):
     count_clubs = 0
@@ -96,13 +86,6 @@ def parsing_from_page_club(id, url):
             store['players_link'][id_player] = url_player
         except Exception as ex:
             print(ex)
-
-# def parsing_players_info(list):
-#     # id: {'url': link}
-#     # вот тут я файл подключал и это получалась локальная переменная и дальше на это ругалось
-#     for id in list.keys():
-#         players_info[id] = parsing_player_info(list[id])
-#         break
 
 def parsing_player_info(id, url):
     store['players_info'][id] = {}
@@ -292,52 +275,24 @@ def parsing_player_info(id, url):
         print(ex, url)
     time.sleep(randrange(1, 2))
 
+def main():
 
-def getMonthByName(s):
-    monthes = ['янв', 'фев', 'мар', 'апр', 'мая', 'июн', 'июл', 'авг', 'сен', 'окт', 'ноя', 'дек']
-    nStr = s.lower().strip()
-    for i in range(len(monthes)):
-        if re.match(monthes[i], nStr) != None: return ('0' + str(i + 1))[-2:]  # Если нашли то возвращаем номер месяца в формате 01, 02
+    leagues = json.load(open('leagues.json', 'r', encoding='utf-8'))
 
-    return None
+    for elem in leagues[:5]: #собираем id и url клубов со страниц лиг
+        url = elem['link']
+        parsing_clubs_id_and_url(url)
+        break
 
-def convert_price(price):
-    price = price.split()
-    coast = float(price[0].replace(',','.'))
-    coast = coast * (1_000_000 if re.match('млн', price[1]) else 1_000)
-    currency = price[2]
-    return int(coast), currency
+    for id, url in store['clubs_link'].items(): #собираем данные со страниц клубов
+        parsing_from_page_club(id, url)
+        break
 
-
-def find_or_create_stadium(stadium_name):
-    return find_or_create(stadium_list,stadium_name)
-
-# def find_or_create_leage(leage_name):
-#     return find_or_create(leage_list ,leage_name)
-# def decorate(func):
-#     def decorated(name):
-#         func()
-
-def find_or_create(list, name):
-    if name not in list:
-        list.append(name)
-
-    return list.index(name)+1
-
-leagues = json.load(open('leagues.json', 'r', encoding='utf-8'))
-
-for elem in leagues[:5]: #собираем id и url клубов со страниц лиг
-    url = elem['link']
-    parsing_clubs_id_and_url(url)
-    break
-
-for id, url in store['clubs_link'].items(): #собираем данные со страниц клубов
-    parsing_from_page_club(id, url)
-    break
-
-for id, url in store['players_link'].items():
-    parsing_player_info(id, url)
+    for id, url in store['players_link'].items():
+        parsing_player_info(id, url)
+        break
 
 
-json.dump(store, open('clubs.json', 'w', encoding='utf-8'),indent=2,ensure_ascii=False)
+    json.dump(store, open('clubs.json', 'w', encoding='utf-8'),indent=2,ensure_ascii=False)
 
+main()
