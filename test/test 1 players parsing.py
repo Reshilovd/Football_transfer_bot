@@ -9,6 +9,50 @@ from loguru import logger
 headers = {"User-Agent":"Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Mobile Safari/537.36 Edg/95.0.1020.40"
 }
 
+store = {
+    'clubs': {
+
+    },
+    'clubs_link': {
+
+
+    },
+    'stadiums': {
+
+    }
+}
+
+list_url =[]
+stadium_list = []
+
+getFullURL = lambda url: f"https://www.transfermarkt.ru{url}"
+
+def parsing_from_page_club(url):
+    req = requests.get(url, headers=headers)
+    src = req.text
+    soup = BeautifulSoup(src, 'lxml')
+    name = soup.find(class_='dataBild').find('img').get('alt')
+    logo = soup.find(class_='dataBild').find('img').get('src')
+    stadium_name = soup.find_all(class_='dataValue')
+    for i in stadium_name:
+        try:
+            if i.find('a').get('title') == name:
+                stadium_url = i.find('a').get('href')
+                stadium_name = i.find('a').text
+        except Exception as ex:
+            print(ex)
+    store['clubs'][id]['name'] = name
+    store['clubs'][id]['logo'] = logo
+
+    stadium_id = find_or_create_stadium(stadium_name)
+
+    store['stadiums'][stadium_id] = {}
+    store['stadiums'][stadium_id]['name'] = stadium_name
+    store['stadiums'][stadium_id]['url'] = getFullURL(stadium_url)
+
+    player_url = soup.find_all(class_='di nowrap')
+    for i in player_url:
+        print(i)
 
 def parsing_player_info(url):
     info  = {}
@@ -17,7 +61,7 @@ def parsing_player_info(url):
     soup = BeautifulSoup(src, 'lxml')
     try:
         try:
-            photo = soup.find(rel="preload").get('href')
+            photo = soup.find(class_="modal-trigger").find('img').get('src')
             info['photo'] = photo
         except AttributeError:
             err = f'Фото не найдено: {url}'
@@ -200,6 +244,17 @@ def convert_price(price):
     coast = coast * (1_000_000 if re.match('млн', price[1]) else 1_000)
     currency = price[2]
     return int(coast), currency
+
+def find_or_create_stadium(stadium_name):
+    return find_or_create(stadium_list,stadium_name)
+
+
+def find_or_create(list, name):
+    if name not in list:
+        list.append(name)
+
+    return list.index(name)+1
+
 
 
 parsing_player_info('https://www.transfermarkt.ru/antoine-griezmann/profil/spieler/125781')
