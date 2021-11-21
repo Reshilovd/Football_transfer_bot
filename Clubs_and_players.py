@@ -3,7 +3,6 @@ from bs4 import BeautifulSoup
 import datetime as DT
 import time
 from random import randrange
-import pymysql
 import json
 from secondary_function import convert_price
 from secondary_function import getMonthByName
@@ -11,8 +10,7 @@ from secondary_function import getFullURL
 from secondary_function import find_or_create
 from secondary_function import find_or_create_stadium
 from secondary_function import club_init
-
-headers = {"User-Agent":"Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Mobile Safari/537.36 Edg/95.0.1020.40"}
+from secondary_function import headers
 
 store = {
         'clubs': {
@@ -292,7 +290,6 @@ def main():
         parsing_player_info(id, url)
         break
 
-
-    json.dump(store, open('clubs.json', 'w', encoding='utf-8'),indent=2,ensure_ascii=False)
+    json.dump(store, open('clubs_and_players.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
 
 main()

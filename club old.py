@@ -112,5 +112,5 @@ for key, value in store['clubs_link'].items(): #собираем данные с
     break
 
 
-json.dump(store, open('clubs.json', 'w', encoding='utf-8'),indent=2,ensure_ascii=False)
+json.dump(store, open('clubs_and_players.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
 
