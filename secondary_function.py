@@ -1,5 +1,7 @@
 import re
 stadium_list = []
+position_list = []
+nation_list = []
 
 headers = {"User-Agent":"Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Mobile Safari/537.36 Edg/95.0.1020.40"}
 
@@ -20,14 +22,21 @@ def convert_price(price):
     currency = price[2]
     return int(coast), currency
 
-def find_or_create_stadium(stadium_name):
-    return find_or_create(stadium_list,stadium_name)
-
 def find_or_create(list, name):
     if name not in list:
         list.append(name)
 
     return list.index(name)+1
+
+def find_or_create_position(position_name):
+    return find_or_create(position_list,position_name)
+
+def find_or_create_stadium(stadium_name):
+    return find_or_create(stadium_list,stadium_name)
+
+def find_or_create_nation(nation):
+    return find_or_create(nation_list,nation)
+
 
 def club_init(id):
     return {

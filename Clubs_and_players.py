@@ -9,6 +9,8 @@ from secondary_function import getMonthByName
 from secondary_function import getFullURL
 from secondary_function import find_or_create
 from secondary_function import find_or_create_stadium
+from secondary_function import find_or_create_position
+from secondary_function import find_or_create_nation
 from secondary_function import club_init
 from secondary_function import headers
 
@@ -28,6 +30,12 @@ store = {
         },
 
         'players_info': {
+
+        },
+        'positions': {
+
+        },
+        'nation': {
 
         }
 
@@ -69,7 +77,7 @@ def parsing_from_page_club(id, url):
             print(ex)
     store['clubs'][id]['name'] = name
     store['clubs'][id]['logo'] = logo
-    # store['clubs'][id]['league_id'] = league_id
+
 
     stadium_id = find_or_create_stadium(stadium_name)
 
@@ -184,7 +192,8 @@ def parsing_player_info(id, url):
             for i in nation:
                 if not i.get('alt') in list_nation:
                     list_nation.append(i.get('alt'))
-            store['players_info'][id]['nation'] = list_nation
+            # nation_id = find_or_create_nation()
+            store['nation'][id]['nation'] = list_nation
             if len(list_nation) > 2:
                 err = f'Подозрительное количество наций {url}'
                 print(err)
@@ -194,16 +203,15 @@ def parsing_player_info(id, url):
             err = f'Нация не найдена {url}'
             print(err)
 
-
         try:
-            position = soup.find(class_='detail-position__position').text
-            store['players_info'][id]['position'] = position
-        except AttributeError:
+            position_name = soup.find(class_='detail-position__position').text
+            position_id = find_or_create_position(position_name)
+            store['positions'][position_id] = position_name
+
+        except Exception as ex:
             store['players_info'][id]['position'] = ''
-
             err = f'Позиция не найдена {url}'
-            print(err)
-
+            print(ex, err)
 
         try:
             national_team = soup.find(class_='flaggenrahmen flagge').get('title')
@@ -291,7 +299,7 @@ def main():
 
     for id, url in store['players_link'].items():
         parsing_player_info(id, url)
-        break
+
 
     json.dump(store, open('clubs_and_players.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
 
