@@ -288,7 +288,7 @@ def main():
 
     for id, url in store['players_link'].items():
         parsing_player_info(id, url)
-        break
+
 
     json.dump(store, open('clubs_and_players.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
 

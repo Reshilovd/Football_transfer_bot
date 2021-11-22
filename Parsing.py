@@ -290,23 +290,23 @@ parsing_players()
 parsing_players_info(players_link)
 print(players_info)
 
-# try:
-#     connection = pymysql.connect(host='141.8.192.193',
-#                                 user='a0595563',
-#                                 password='kaifamumig',
-#                                 db='a0595563_Transfer',
-#                                 cursorclass=pymysql.cursors.DictCursor)
-#     print('Success!')
-#     try:
-#         for key in players_info:
-#             with connection.cursor() as cursor:
-#                 sql = "INSERT INTO `players` (`id`, `first_name`, `last_name`, `birthday`, `position`, `nation`, `club_id`) VALUES (%s, %s, %s, %s, %s, %s, %s)"
-#                 cursor.execute(sql, (key, players_info[key]['first_name'],players_info[key]['last_name'],players_info[key]['birthday'],players_info[key]['position'],players_info[key]['nation'],players_info[key]['club_id']))
-#                 print('Запись добавлена')
-#                 connection.commit()
-#
-#     finally:
-#         connection.close()
-#
-# except Exception as ex:
-#     print(ex)
+try:
+    connection = pymysql.connect(host='141.8.192.193',
+                                user='a0595563',
+                                password='kaifamumig',
+                                db='a0595563_Transfer',
+                                cursorclass=pymysql.cursors.DictCursor)
+    print('Success!')
+    try:
+        for key in players_info:
+            with connection.cursor() as cursor:
+                sql = "INSERT INTO `players` (`id`, `first_name`, `last_name`, `birthday`, `position`, `nation`, `club_id`) VALUES (%s, %s, %s, %s, %s, %s, %s)"
+                cursor.execute(sql, (key, players_info[key]['first_name'],players_info[key]['last_name'],players_info[key]['birthday'],players_info[key]['position'],players_info[key]['nation'],players_info[key]['club_id']))
+                print('Запись добавлена')
+                connection.commit()
+
+    finally:
+        connection.close()
+
+except Exception as ex:
+    print(ex)
