@@ -34,7 +34,7 @@ store = {
     }
 list_url = []
 
-def parsing_clubs_id_and_url(url):
+def parsing_clubs_id_and_url(url, league_id):
     count_clubs = 0
     req = requests.get(url, headers=headers)
     src = req.text
@@ -49,6 +49,7 @@ def parsing_clubs_id_and_url(url):
             count_clubs += 1
             store['clubs_link'][id] = getFullURL(link)
             store['clubs'][id] = club_init(id)
+            store['clubs'][id]['league_id'] = league_id
 
     print(url, ': найдено ', count_clubs, ' клубов')
 
@@ -68,6 +69,7 @@ def parsing_from_page_club(id, url):
             print(ex)
     store['clubs'][id]['name'] = name
     store['clubs'][id]['logo'] = logo
+    # store['clubs'][id]['league_id'] = league_id
 
     stadium_id = find_or_create_stadium(stadium_name)
 
@@ -279,7 +281,8 @@ def main():
 
     for elem in leagues[:5]: #собираем id и url клубов со страниц лиг
         url = elem['link']
-        parsing_clubs_id_and_url(url)
+        league_id = elem['key']
+        parsing_clubs_id_and_url(url, league_id)
         break
 
     for id, url in store['clubs_link'].items(): #собираем данные со страниц клубов
@@ -288,7 +291,7 @@ def main():
 
     for id, url in store['players_link'].items():
         parsing_player_info(id, url)
-
+        break
 
     json.dump(store, open('clubs_and_players.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
 

@@ -20,6 +20,12 @@ try:
                 cursor.execute(sql, (id, store['players_info'][id]['photo'], store['players_info'][id]['first_name'], store['players_info'][id]['last_name'], store['players_info'][id]['birthday'], store['players_info'][id]['death_date'], store['players_info'][id]['height'], store['players_info'][id]['end_career'], store['players_info'][id]['free_agent'], store['players_info'][id]['price'], store['players_info'][id]['currency']))
                 print(f'{id} ОК')
                 connection.commit()
+        for id in store['clubs']:
+            with connection.cursor() as cursor:
+                sql = "INSERT INTO `clubs` (`id`, `club_name`,`league_id`) VALUES (%s, %s, %s )"
+                cursor.execute(sql, (id, ))
+                print(f'{id} ОК')
+                connection.commit()
 
     finally:
         connection.close()
