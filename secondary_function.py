@@ -32,6 +32,9 @@ def find_or_create_stadium(stadium_name):
 def find_or_create_nation(nation):
     return find_or_create(nation_list,nation)
 
+def find_or_create_national_team(national_team):
+    return find_or_create(nation_list,national_team)
+
 def club_init(id):
     return {
         'name': '',
@@ -108,19 +111,17 @@ def get_height(soup, url, id):
 
 @logger
 def get_nation(soup, url, id):
-    store['players_info'][id]['nation'] = ''
     nation = soup.find(class_='info-table').find_all(class_='flaggenrahmen')
     list_nation = []
     for i in nation:
+        nation_id = find_or_create_nation(i.get('alt'))
         if not i.get('alt') in list_nation:
+            store['nation'][nation_id] = i.get('alt')
+            store['nations_players'].add((nation_id, id))
             list_nation.append(i.get('alt'))
-    # nation_id = find_or_create_nation()
-    store['players_info'][id]['nation'] = list_nation
     if len(list_nation) > 2:
         err = f'Подозрительное количество наций {url}'
         print(err)
-
-
 
 @logger
 def get_position(soup, url, id):
@@ -131,9 +132,9 @@ def get_position(soup, url, id):
 
 @logger
 def get_nation_team(soup, url, id):
-    store['players_info'][id]['national_team'] = ''
     national_team = soup.find(class_='flaggenrahmen flagge').get('title')
-    store['players_info'][id]['national_team'] = national_team
+    national_team_id = find_or_create_national_team(national_team)
+    store['national_team_players'].add((national_team_id, id))
 
 @logger
 def get_end_career_and_free_agent(soup, url, id):
