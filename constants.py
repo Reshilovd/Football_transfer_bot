@@ -1,24 +1,30 @@
 store = {
+        'leagues_clubs': set(),
+
+
         'clubs': {
 
         },
+        'clubs_players': set(),
+
+
         'clubs_link': {
 
         },
         'stadiums': {
 
         },
-
         'players_link': {
 
         },
-
         'players_info': {
 
         },
         'positions': {
 
         },
+        'positions_players': set(),
+
         'nation': {
 
         }

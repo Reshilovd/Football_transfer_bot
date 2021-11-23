@@ -1,4 +1,86 @@
 {
+  "leagues_clubs": [
+    [
+      "GB1",
+      "180"
+    ],
+    [
+      "GB1",
+      "1237"
+    ],
+    [
+      "GB1",
+      "1148"
+    ],
+    [
+      "GB1",
+      "29"
+    ],
+    [
+      "GB1",
+      "1132"
+    ],
+    [
+      "GB1",
+      "543"
+    ],
+    [
+      "GB1",
+      "405"
+    ],
+    [
+      "GB1",
+      "762"
+    ],
+    [
+      "GB1",
+      "1003"
+    ],
+    [
+      "GB1",
+      "873"
+    ],
+    [
+      "GB1",
+      "281"
+    ],
+    [
+      "GB1",
+      "31"
+    ],
+    [
+      "GB1",
+      "631"
+    ],
+    [
+      "GB1",
+      "379"
+    ],
+    [
+      "GB1",
+      "985"
+    ],
+    [
+      "GB1",
+      "1010"
+    ],
+    [
+      "GB1",
+      "11"
+    ],
+    [
+      "GB1",
+      "399"
+    ],
+    [
+      "GB1",
+      "148"
+    ],
+    [
+      "GB1",
+      "1123"
+    ]
+  ],
   "clubs": {
     "281": {
       "name": "Манчестер Сити",
@@ -101,6 +183,104 @@
       "league_id": "GB1"
     }
   },
+  "clubs_players": [
+    [
+      "281",
+      "14555"
+    ],
+    [
+      "281",
+      "177476"
+    ],
+    [
+      "281",
+      "668265"
+    ],
+    [
+      "281",
+      "186590"
+    ],
+    [
+      "281",
+      "238223"
+    ],
+    [
+      "281",
+      "134425"
+    ],
+    [
+      "281",
+      "171424"
+    ],
+    [
+      "281",
+      "258004"
+    ],
+    [
+      "281",
+      "221624"
+    ],
+    [
+      "281",
+      "363205"
+    ],
+    [
+      "281",
+      "357565"
+    ],
+    [
+      "281",
+      "182712"
+    ],
+    [
+      "281",
+      "88755"
+    ],
+    [
+      "281",
+      "95424"
+    ],
+    [
+      "281",
+      "53622"
+    ],
+    [
+      "281",
+      "241641"
+    ],
+    [
+      "281",
+      "406635"
+    ],
+    [
+      "281",
+      "568177"
+    ],
+    [
+      "281",
+      "203853"
+    ],
+    [
+      "281",
+      "157495"
+    ],
+    [
+      "281",
+      "203460"
+    ],
+    [
+      "281",
+      "26267"
+    ],
+    [
+      "281",
+      "176553"
+    ],
+    [
+      "281",
+      "398184"
+    ]
+  ],
   "clubs_link": {
     "281": "https://www.transfermarkt.ru/manchester-city/startseite/verein/281/saison_id/2021",
     "985": "https://www.transfermarkt.ru/manchester-united/startseite/verein/985/saison_id/2021",
@@ -160,453 +340,29 @@
       "photo": "https://img.a.transfermarkt.technology/portrait/header/238223-1474545573.jpg?lm=1",
       "first_name": "",
       "last_name": "Ederson",
-      "birthday": "1000-01-01",
+      "birthday": "1993-08-17",
       "death_date": "",
       "height": 188.0,
       "nation": [
         "Бразилия",
         "Португалия"
       ],
-      "position": "",
       "national_team": "Бразилия",
       "end_career": false,
       "free_agent": false,
       "rent_from": "",
       "price": 50000000,
-      "currency": "€"
-    },
-    "221624": {
-      "photo": "https://img.a.transfermarkt.technology/portrait/header/221624-1551259786.jpg?lm=1",
-      "first_name": "Zack",
-      "last_name": "Steffen",
-      "birthday": "1000-01-01",
-      "death_date": "",
-      "height": 191.0,
-      "nation": [
-        "Соединенные Штаты Америки"
-      ],
-      "position": "",
-      "national_team": "Соединенные Штаты Америки",
-      "end_career": false,
-      "free_agent": false,
-      "rent_from": "",
-      "price": 6000000,
-      "currency": "€"
-    },
-    "14555": {
-      "photo": "https://img.a.transfermarkt.technology/portrait/header/s_14555_1071_2013_09_26_1.jpg?lm=1",
-      "first_name": "Scott",
-      "last_name": "Carson",
-      "birthday": "1000-01-01",
-      "death_date": "",
-      "height": 188.0,
-      "nation": [
-        "Англия"
-      ],
-      "position": "",
-      "national_team": "Англия",
-      "end_career": false,
-      "free_agent": false,
-      "rent_from": "",
-      "price": 300000,
-      "currency": "€"
-    },
-    "258004": {
-      "photo": "https://img.a.transfermarkt.technology/portrait/header/258004-1572340728.jpg?lm=1",
-      "first_name": "Rúben",
-      "last_name": "Dias",
-      "birthday": "1000-01-01",
-      "death_date": "",
-      "height": 187.0,
-      "nation": [
-        "Португалия"
-      ],
-      "position": "",
-      "national_team": "Португалия",
-      "end_career": false,
-      "free_agent": false,
-      "rent_from": "",
-      "price": 75000000,
-      "currency": "€"
-    },
-    "176553": {
-      "photo": "https://img.a.transfermarkt.technology/portrait/header/176553-1564994239.jpg?lm=1",
-      "first_name": "Aymeric",
-      "last_name": "Laporte",
-      "birthday": "1000-01-01",
-      "death_date": "",
-      "height": 189.0,
-      "nation": [
-        "Франция",
-        "Испания"
-      ],
-      "position": "",
-      "national_team": "Испания",
-      "end_career": false,
-      "free_agent": false,
-      "rent_from": "",
-      "price": 45000000,
-      "currency": "€"
-    },
-    "177476": {
-      "photo": "https://img.a.transfermarkt.technology/portrait/header/177476-1483877894.jpg?lm=1",
-      "first_name": "Nathan",
-      "last_name": "Aké",
-      "birthday": "1000-01-01",
-      "death_date": "",
-      "height": 180.0,
-      "nation": [
-        "Нидерланды",
-        "Кот-д'Ивуар"
-      ],
-      "position": "",
-      "national_team": "Нидерланды",
-      "end_career": false,
-      "free_agent": false,
-      "rent_from": "",
-      "price": 32000000,
-      "currency": "€"
-    },
-    "186590": {
-      "photo": "https://img.a.transfermarkt.technology/portrait/header/186590-1583400326.jpg?lm=1",
-      "first_name": "John",
-      "last_name": "Stones",
-      "birthday": "1000-01-01",
-      "death_date": "",
-      "height": 188.0,
-      "nation": [
-        "Англия"
-      ],
-      "position": "",
-      "national_team": "Англия",
-      "end_career": false,
-      "free_agent": false,
-      "rent_from": "",
-      "price": 30000000,
-      "currency": "€"
-    },
-    "203853": {
-      "photo": "https://img.a.transfermarkt.technology/portrait/header/203853-1539784797.jpg?lm=1",
-      "first_name": "Oleksandr",
-      "last_name": "Zinchenko",
-      "birthday": "1000-01-01",
-      "death_date": "",
-      "height": 175.0,
-      "nation": [
-        "Украина"
-      ],
-      "position": "",
-      "national_team": "Украина",
-      "end_career": false,
-      "free_agent": false,
-      "rent_from": "",
-      "price": 28000000,
-      "currency": "€"
-    },
-    "157495": {
-      "photo": "https://img.a.transfermarkt.technology/portrait/header/157495-1598301159.jpg?lm=1",
-      "first_name": "Benjamin",
-      "last_name": "Mendy",
-      "birthday": "1000-01-01",
-      "death_date": "",
-      "height": 185.0,
-      "nation": [
-        "Франция",
-        "Сенегал"
-      ],
-      "position": "",
-      "national_team": "Франция",
-      "end_career": false,
-      "free_agent": false,
-      "rent_from": "",
-      "price": 10000000,
-      "currency": "€"
-    },
-    "182712": {
-      "photo": "https://img.a.transfermarkt.technology/portrait/header/182712-1615221629.jpg?lm=1",
-      "first_name": "João",
-      "last_name": "Cancelo",
-      "birthday": "1000-01-01",
-      "death_date": "",
-      "height": 182.0,
-      "nation": [
-        "Португалия"
-      ],
-      "position": "",
-      "national_team": "Португалия",
-      "end_career": false,
-      "free_agent": false,
-      "rent_from": "",
-      "price": 55000000,
-      "currency": "€"
-    },
-    "95424": {
-      "photo": "https://img.a.transfermarkt.technology/portrait/header/95424-1583400627.jpg?lm=1",
-      "first_name": "Kyle",
-      "last_name": "Walker",
-      "birthday": "1000-01-01",
-      "death_date": "",
-      "height": 183.0,
-      "nation": [
-        "Англия"
-      ],
-      "position": "",
-      "national_team": "Англия",
-      "end_career": false,
-      "free_agent": false,
-      "rent_from": "",
-      "price": 28000000,
-      "currency": "€"
-    },
-    "357565": {
-      "photo": "https://img.a.transfermarkt.technology/portrait/header/357565-1556022958.jpg?lm=1",
-      "first_name": "",
-      "last_name": "Rodri",
-      "birthday": "1000-01-01",
-      "death_date": "",
-      "height": 191.0,
-      "nation": [
-        "Испания"
-      ],
-      "position": "",
-      "national_team": "Испания",
-      "end_career": false,
-      "free_agent": false,
-      "rent_from": "",
-      "price": 70000000,
-      "currency": "€"
-    },
-    "26267": {
-      "photo": "https://img.a.transfermarkt.technology/portrait/header/26267-1477040739.jpg?lm=1",
-      "first_name": "",
-      "last_name": "Fernandinho",
-      "birthday": "1000-01-01",
-      "death_date": "",
-      "height": 179.0,
-      "nation": [
-        "Бразилия"
-      ],
-      "position": "",
-      "national_team": "Бразилия",
-      "end_career": false,
-      "free_agent": false,
-      "rent_from": "",
-      "price": 2000000,
-      "currency": "€"
-    },
-    "406635": {
-      "photo": "https://img.a.transfermarkt.technology/portrait/header/406635-1594986905.jpg?lm=1",
-      "first_name": "Phil",
-      "last_name": "Foden",
-      "birthday": "1000-01-01",
-      "death_date": "",
-      "height": 171.0,
-      "nation": [
-        "Англия"
-      ],
-      "position": "",
-      "national_team": "Англия",
-      "end_career": false,
-      "free_agent": false,
-      "rent_from": "",
-      "price": 80000000,
-      "currency": "€"
-    },
-    "53622": {
-      "photo": "https://img.a.transfermarkt.technology/portrait/header/53622-1519915654.jpg?lm=1",
-      "first_name": "Ilkay",
-      "last_name": "Gündogan",
-      "birthday": "1000-01-01",
-      "death_date": "",
-      "height": 180.0,
-      "nation": [
-        "Германия"
-      ],
-      "position": "",
-      "national_team": "Германия",
-      "end_career": false,
-      "free_agent": false,
-      "rent_from": "",
-      "price": 40000000,
-      "currency": "€"
-    },
-    "88755": {
-      "photo": "https://img.a.transfermarkt.technology/portrait/header/88755-1626449012.jpg?lm=1",
-      "first_name": "Kevin",
-      "last_name": "De Bruyne",
-      "birthday": "1000-01-01",
-      "death_date": "",
-      "height": 181.0,
-      "nation": [
-        "Бельгия"
-      ],
-      "position": "",
-      "national_team": "Бельгия",
-      "end_career": false,
-      "free_agent": false,
-      "rent_from": "",
-      "price": 100000000,
-      "currency": "€"
-    },
-    "241641": {
-      "photo": "https://img.a.transfermarkt.technology/portrait/header/241641-1520189140.jpg?lm=1",
-      "first_name": "Bernardo",
-      "last_name": "Silva",
-      "birthday": "1000-01-01",
-      "death_date": "",
-      "height": 173.0,
-      "nation": [
-        "Португалия"
-      ],
-      "position": "",
-      "national_team": "Португалия",
-      "end_career": false,
-      "free_agent": false,
-      "rent_from": "",
-      "price": 70000000,
-      "currency": "€"
-    },
-    "568177": {
-      "photo": "https://img.a.transfermarkt.technology/portrait/header/568177-1557307836.png?lm=1",
-      "first_name": "Cole",
-      "last_name": "Palmer",
-      "birthday": "1000-01-01",
-      "death_date": "",
-      "height": 182.0,
-      "nation": [
-        "Англия"
-      ],
-      "position": "",
-      "national_team": "Англия",
-      "end_career": false,
-      "free_agent": false,
-      "rent_from": "",
-      "price": 500000,
-      "currency": "€"
-    },
-    "203460": {
-      "photo": "https://img.a.transfermarkt.technology/portrait/header/203460-1581417066.jpg?lm=1",
-      "first_name": "Jack",
-      "last_name": "Grealish",
-      "birthday": "1000-01-01",
-      "death_date": "",
-      "height": 180.0,
-      "nation": [
-        "Англия",
-        "Ирландия"
-      ],
-      "position": "",
-      "national_team": "Англия",
-      "end_career": false,
-      "free_agent": false,
-      "rent_from": "",
-      "price": 100000000,
-      "currency": "€"
-    },
-    "134425": {
-      "photo": "https://img.a.transfermarkt.technology/portrait/header/134425-1577051521.jpg?lm=1",
-      "first_name": "Raheem",
-      "last_name": "Sterling",
-      "birthday": "1000-01-01",
-      "death_date": "",
-      "height": 170.0,
-      "nation": [
-        "Ямайка",
-        "Англия"
-      ],
-      "position": "",
-      "national_team": "Англия",
-      "end_career": false,
-      "free_agent": false,
-      "rent_from": "",
-      "price": 90000000,
-      "currency": "€"
-    },
-    "398184": {
-      "photo": "https://img.a.transfermarkt.technology/portrait/header/398184-1620308050.jpg?lm=1",
-      "first_name": "Ferran",
-      "last_name": "Torres",
-      "birthday": "1000-01-01",
-      "death_date": "",
-      "height": 184.0,
-      "nation": [
-        "Испания"
-      ],
-      "position": "",
-      "national_team": "Испания",
-      "end_career": false,
-      "free_agent": false,
-      "rent_from": "",
-      "price": 50000000,
-      "currency": "€"
-    },
-    "171424": {
-      "photo": "https://img.a.transfermarkt.technology/portrait/header/171424-1461578220.jpg?lm=1",
-      "first_name": "Riyad",
-      "last_name": "Mahrez",
-      "birthday": "1000-01-01",
-      "death_date": "",
-      "height": 179.0,
-      "nation": [
-        "Франция",
-        "Алжир"
-      ],
-      "position": "",
-      "national_team": "Алжир",
-      "end_career": false,
-      "free_agent": false,
-      "rent_from": "",
-      "price": 42000000,
-      "currency": "€"
-    },
-    "668265": {
-      "photo": "https://img.a.transfermarkt.technology/portrait/header/668265-1618220631.jpg?lm=1",
-      "first_name": "",
-      "last_name": "Kayky",
-      "birthday": "1000-01-01",
-      "death_date": "",
-      "height": 175.0,
-      "nation": [
-        "Бразилия"
-      ],
-      "position": "",
-      "national_team": "Бразилия",
-      "end_career": false,
-      "free_agent": false,
-      "rent_from": "",
-      "price": 14000000,
-      "currency": "€"
-    },
-    "363205": {
-      "photo": "https://img.a.transfermarkt.technology/portrait/header/363205-1533284263.jpg?lm=1",
-      "first_name": "Gabriel",
-      "last_name": "Jesus",
-      "birthday": "1000-01-01",
-      "death_date": "",
-      "height": 175.0,
-      "nation": [
-        "Бразилия"
-      ],
-      "position": "",
-      "national_team": "Бразилия",
-      "end_career": false,
-      "free_agent": false,
-      "rent_from": "",
-      "price": 60000000,
       "currency": "€"
     }
   },
   "positions": {
-    "1": "Вратарь",
-    "2": "Центр. защитник",
-    "3": "Левый защитник",
-    "4": "Правый защитник",
-    "5": "Опорный полузащитник",
-    "6": "Центр. полузащитник",
-    "7": "Атак. полузащитник",
-    "8": "Левый Вингер",
-    "9": "Правый Вингер",
-    "10": "Центральный нап."
+    "1": "Вратарь"
   },
+  "positions_players": [
+    [
+      1,
+      "238223"
+    ]
+  ],
   "nation": {}
 }

@@ -1,3 +1,15 @@
 сначало игрока в players поцизию паралленьно в positions
 потом клуб в clubs
 связываем игрока с клубом в clubs_players
+
+
+clubs +
+clubs_players+ +
+leagues +
+leagues_clubs +
+
+players +
+positions +
+positions_players +
+
+nations

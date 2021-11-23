@@ -120,12 +120,14 @@ def get_nation(soup, url, id):
         err = f'Подозрительное количество наций {url}'
         print(err)
 
+
+
 @logger
 def get_position(soup, url, id):
-    store['players_info'][id]['position'] = ''
     position_name = soup.find(class_='detail-position__position').text
     position_id = find_or_create_position(position_name)
     store['positions'][position_id] = position_name
+    store['positions_players'].add((position_id, id))
 
 @logger
 def get_nation_team(soup, url, id):

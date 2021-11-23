@@ -6,7 +6,14 @@ import json
 from secondary_function import *
 from constants import *
 import datetime as dt
+import time
 
+class MyEncoder(json.JSONEncoder):
+    def default(self, o):
+        if isinstance(o, set):
+            return list(o)
+        return o
+            
 
 def parsing_clubs_id_and_url(url, league_id):
     time_start = dt.datetime.now()
@@ -25,6 +32,7 @@ def parsing_clubs_id_and_url(url, league_id):
             store['clubs_link'][id] = getFullURL(link)
             store['clubs'][id] = club_init(id)
             store['clubs'][id]['league_id'] = league_id
+            store['leagues_clubs'].add((league_id, id))
     time_end = dt.datetime.now()
     print(url, ': найдено ', count_clubs, ' клубов за ', str(time_end - time_start))
 
@@ -59,6 +67,7 @@ def parsing_from_page_club(id, url):
             url_player = getFullURL(i.find(class_='show-for-small').find('a').get('href'))
             id_player = url_player.split('/')[-1]
             store['players_link'][id_player] = url_player
+            store['clubs_players'].add((id, id_player))
         except Exception as ex:
             pass
 
@@ -104,12 +113,14 @@ def main():
 
     for id, url in store['players_link'].items():
         parsing_player_info(id, url)
+        break
         bar.next()
 
     bar.finish()
     time_finish = dt.datetime.now()
     print(str(time_finish-time_start))
 
-    json.dump(store, open('clubs_and_players.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
+
+    json.dump(store, open('clubs_and_players.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False, cls=MyEncoder)
 
 main()
