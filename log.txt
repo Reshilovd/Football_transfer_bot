@@ -1,0 +1,961 @@
+##########################
+URL: https://www.transfermarkt.ru/ederson/profil/spieler/238223
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)##########################
+URL: https://www.transfermarkt.ru/zack-steffen/profil/spieler/221624
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)##########################
+URL: https://www.transfermarkt.ru/scott-carson/profil/spieler/14555
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)##########################
+URL: https://www.transfermarkt.ru/ruben-dias/profil/spieler/258004
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)##########################
+URL: https://www.transfermarkt.ru/aymeric-laporte/profil/spieler/176553
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)##########################
+URL: https://www.transfermarkt.ru/nathan-ake/profil/spieler/177476
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)##########################
+URL: https://www.transfermarkt.ru/john-stones/profil/spieler/186590
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)##########################
+URL: https://www.transfermarkt.ru/oleksandr-zinchenko/profil/spieler/203853
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)##########################
+URL: https://www.transfermarkt.ru/benjamin-mendy/profil/spieler/157495
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)##########################
+URL: https://www.transfermarkt.ru/joao-cancelo/profil/spieler/182712
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)##########################
+URL: https://www.transfermarkt.ru/kyle-walker/profil/spieler/95424
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)##########################
+URL: https://www.transfermarkt.ru/rodri/profil/spieler/357565
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)##########################
+URL: https://www.transfermarkt.ru/fernandinho/profil/spieler/26267
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)##########################
+URL: https://www.transfermarkt.ru/phil-foden/profil/spieler/406635
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)##########################
+URL: https://www.transfermarkt.ru/ilkay-gundogan/profil/spieler/53622
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)##########################
+URL: https://www.transfermarkt.ru/kevin-de-bruyne/profil/spieler/88755
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)##########################
+URL: https://www.transfermarkt.ru/bernardo-silva/profil/spieler/241641
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)##########################
+URL: https://www.transfermarkt.ru/cole-palmer/profil/spieler/568177
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)##########################
+URL: https://www.transfermarkt.ru/jack-grealish/profil/spieler/203460
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)##########################
+URL: https://www.transfermarkt.ru/raheem-sterling/profil/spieler/134425
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)##########################
+URL: https://www.transfermarkt.ru/ferran-torres/profil/spieler/398184
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)##########################
+URL: https://www.transfermarkt.ru/riyad-mahrez/profil/spieler/171424
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)##########################
+URL: https://www.transfermarkt.ru/kayky/profil/spieler/668265
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)##########################
+URL: https://www.transfermarkt.ru/gabriel-jesus/profil/spieler/363205
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 14:56:14.561361
+URL: https://www.transfermarkt.ru/ederson/profil/spieler/238223
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 14:56:14.564367
+URL: https://www.transfermarkt.ru/ederson/profil/spieler/238223
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 14:56:16.244139
+URL: https://www.transfermarkt.ru/zack-steffen/profil/spieler/221624
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 14:56:16.256141
+URL: https://www.transfermarkt.ru/zack-steffen/profil/spieler/221624
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 14:56:17.983023
+URL: https://www.transfermarkt.ru/scott-carson/profil/spieler/14555
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 14:56:17.997020
+URL: https://www.transfermarkt.ru/scott-carson/profil/spieler/14555
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 14:56:20.015909
+URL: https://www.transfermarkt.ru/ruben-dias/profil/spieler/258004
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 14:56:20.024911
+URL: https://www.transfermarkt.ru/ruben-dias/profil/spieler/258004
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 14:56:21.624942
+URL: https://www.transfermarkt.ru/aymeric-laporte/profil/spieler/176553
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 14:56:21.636958
+URL: https://www.transfermarkt.ru/aymeric-laporte/profil/spieler/176553
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 14:56:23.286743
+URL: https://www.transfermarkt.ru/nathan-ake/profil/spieler/177476
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 14:56:23.296731
+URL: https://www.transfermarkt.ru/nathan-ake/profil/spieler/177476
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 14:56:25.023431
+URL: https://www.transfermarkt.ru/john-stones/profil/spieler/186590
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 14:56:25.032439
+URL: https://www.transfermarkt.ru/john-stones/profil/spieler/186590
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 14:56:26.641548
+URL: https://www.transfermarkt.ru/oleksandr-zinchenko/profil/spieler/203853
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 14:56:26.650534
+URL: https://www.transfermarkt.ru/oleksandr-zinchenko/profil/spieler/203853
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 14:56:28.381908
+URL: https://www.transfermarkt.ru/benjamin-mendy/profil/spieler/157495
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 14:56:28.391910
+URL: https://www.transfermarkt.ru/benjamin-mendy/profil/spieler/157495
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 14:56:30.106560
+URL: https://www.transfermarkt.ru/joao-cancelo/profil/spieler/182712
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 14:56:30.115557
+URL: https://www.transfermarkt.ru/joao-cancelo/profil/spieler/182712
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 14:56:31.781850
+URL: https://www.transfermarkt.ru/kyle-walker/profil/spieler/95424
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 14:56:31.792841
+URL: https://www.transfermarkt.ru/kyle-walker/profil/spieler/95424
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 14:56:33.455718
+URL: https://www.transfermarkt.ru/rodri/profil/spieler/357565
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 14:56:33.467720
+URL: https://www.transfermarkt.ru/rodri/profil/spieler/357565
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 14:56:35.132519
+URL: https://www.transfermarkt.ru/fernandinho/profil/spieler/26267
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 14:56:35.144518
+URL: https://www.transfermarkt.ru/fernandinho/profil/spieler/26267
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 14:56:36.887233
+URL: https://www.transfermarkt.ru/phil-foden/profil/spieler/406635
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 14:56:36.897235
+URL: https://www.transfermarkt.ru/phil-foden/profil/spieler/406635
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 14:56:38.690921
+URL: https://www.transfermarkt.ru/ilkay-gundogan/profil/spieler/53622
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 14:56:38.703919
+URL: https://www.transfermarkt.ru/ilkay-gundogan/profil/spieler/53622
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 14:56:40.471405
+URL: https://www.transfermarkt.ru/kevin-de-bruyne/profil/spieler/88755
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 14:56:40.482401
+URL: https://www.transfermarkt.ru/kevin-de-bruyne/profil/spieler/88755
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 14:56:42.296865
+URL: https://www.transfermarkt.ru/bernardo-silva/profil/spieler/241641
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 14:56:42.307858
+URL: https://www.transfermarkt.ru/bernardo-silva/profil/spieler/241641
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 14:56:44.169198
+URL: https://www.transfermarkt.ru/cole-palmer/profil/spieler/568177
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 14:56:44.178206
+URL: https://www.transfermarkt.ru/cole-palmer/profil/spieler/568177
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 14:56:45.974880
+URL: https://www.transfermarkt.ru/jack-grealish/profil/spieler/203460
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 14:56:45.982882
+URL: https://www.transfermarkt.ru/jack-grealish/profil/spieler/203460
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 14:56:47.698947
+URL: https://www.transfermarkt.ru/raheem-sterling/profil/spieler/134425
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 14:56:47.709961
+URL: https://www.transfermarkt.ru/raheem-sterling/profil/spieler/134425
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 14:56:49.323068
+URL: https://www.transfermarkt.ru/ferran-torres/profil/spieler/398184
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 14:56:49.332070
+URL: https://www.transfermarkt.ru/ferran-torres/profil/spieler/398184
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 14:56:51.009415
+URL: https://www.transfermarkt.ru/riyad-mahrez/profil/spieler/171424
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 14:56:51.019417
+URL: https://www.transfermarkt.ru/riyad-mahrez/profil/spieler/171424
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 14:56:52.590571
+URL: https://www.transfermarkt.ru/kayky/profil/spieler/668265
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 14:56:52.602568
+URL: https://www.transfermarkt.ru/kayky/profil/spieler/668265
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 14:56:54.396889
+URL: https://www.transfermarkt.ru/gabriel-jesus/profil/spieler/363205
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 14:56:54.404891
+URL: https://www.transfermarkt.ru/gabriel-jesus/profil/spieler/363205
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:02:14.261265
+URL: https://www.transfermarkt.ru/ederson/profil/spieler/238223
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:02:14.265265
+URL: https://www.transfermarkt.ru/ederson/profil/spieler/238223
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:02:16.018907
+URL: https://www.transfermarkt.ru/zack-steffen/profil/spieler/221624
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:02:16.030909
+URL: https://www.transfermarkt.ru/zack-steffen/profil/spieler/221624
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:02:17.719757
+URL: https://www.transfermarkt.ru/scott-carson/profil/spieler/14555
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:02:17.728204
+URL: https://www.transfermarkt.ru/scott-carson/profil/spieler/14555
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:02:19.367873
+URL: https://www.transfermarkt.ru/ruben-dias/profil/spieler/258004
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:02:19.379861
+URL: https://www.transfermarkt.ru/ruben-dias/profil/spieler/258004
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:02:21.118285
+URL: https://www.transfermarkt.ru/aymeric-laporte/profil/spieler/176553
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:02:21.131288
+URL: https://www.transfermarkt.ru/aymeric-laporte/profil/spieler/176553
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:02:22.916554
+URL: https://www.transfermarkt.ru/nathan-ake/profil/spieler/177476
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:02:22.927558
+URL: https://www.transfermarkt.ru/nathan-ake/profil/spieler/177476
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:02:24.577730
+URL: https://www.transfermarkt.ru/john-stones/profil/spieler/186590
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:02:24.589719
+URL: https://www.transfermarkt.ru/john-stones/profil/spieler/186590
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:02:26.309403
+URL: https://www.transfermarkt.ru/oleksandr-zinchenko/profil/spieler/203853
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:02:26.323400
+URL: https://www.transfermarkt.ru/oleksandr-zinchenko/profil/spieler/203853
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:02:27.950550
+URL: https://www.transfermarkt.ru/benjamin-mendy/profil/spieler/157495
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:02:27.959538
+URL: https://www.transfermarkt.ru/benjamin-mendy/profil/spieler/157495
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:02:29.691581
+URL: https://www.transfermarkt.ru/joao-cancelo/profil/spieler/182712
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:02:29.703597
+URL: https://www.transfermarkt.ru/joao-cancelo/profil/spieler/182712
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:02:31.371822
+URL: https://www.transfermarkt.ru/kyle-walker/profil/spieler/95424
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:02:31.384824
+URL: https://www.transfermarkt.ru/kyle-walker/profil/spieler/95424
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:02:32.988535
+URL: https://www.transfermarkt.ru/rodri/profil/spieler/357565
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:02:32.998559
+URL: https://www.transfermarkt.ru/rodri/profil/spieler/357565
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:02:34.622723
+URL: https://www.transfermarkt.ru/fernandinho/profil/spieler/26267
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:02:34.635726
+URL: https://www.transfermarkt.ru/fernandinho/profil/spieler/26267
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:02:36.483340
+URL: https://www.transfermarkt.ru/phil-foden/profil/spieler/406635
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:02:36.492347
+URL: https://www.transfermarkt.ru/phil-foden/profil/spieler/406635
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:02:38.119253
+URL: https://www.transfermarkt.ru/ilkay-gundogan/profil/spieler/53622
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:02:38.129255
+URL: https://www.transfermarkt.ru/ilkay-gundogan/profil/spieler/53622
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:02:39.981477
+URL: https://www.transfermarkt.ru/kevin-de-bruyne/profil/spieler/88755
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:02:39.990464
+URL: https://www.transfermarkt.ru/kevin-de-bruyne/profil/spieler/88755
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:02:41.728064
+URL: https://www.transfermarkt.ru/bernardo-silva/profil/spieler/241641
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:02:41.742068
+URL: https://www.transfermarkt.ru/bernardo-silva/profil/spieler/241641
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:02:43.503793
+URL: https://www.transfermarkt.ru/cole-palmer/profil/spieler/568177
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:02:43.513787
+URL: https://www.transfermarkt.ru/cole-palmer/profil/spieler/568177
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:02:45.293399
+URL: https://www.transfermarkt.ru/jack-grealish/profil/spieler/203460
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:02:45.305400
+URL: https://www.transfermarkt.ru/jack-grealish/profil/spieler/203460
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:02:47.000053
+URL: https://www.transfermarkt.ru/raheem-sterling/profil/spieler/134425
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:02:47.009938
+URL: https://www.transfermarkt.ru/raheem-sterling/profil/spieler/134425
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:02:48.693169
+URL: https://www.transfermarkt.ru/ferran-torres/profil/spieler/398184
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:02:48.704163
+URL: https://www.transfermarkt.ru/ferran-torres/profil/spieler/398184
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:02:50.383808
+URL: https://www.transfermarkt.ru/riyad-mahrez/profil/spieler/171424
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:02:50.394811
+URL: https://www.transfermarkt.ru/riyad-mahrez/profil/spieler/171424
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:02:52.097498
+URL: https://www.transfermarkt.ru/kayky/profil/spieler/668265
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:02:52.108492
+URL: https://www.transfermarkt.ru/kayky/profil/spieler/668265
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:02:53.735165
+URL: https://www.transfermarkt.ru/gabriel-jesus/profil/spieler/363205
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:02:53.744167
+URL: https://www.transfermarkt.ru/gabriel-jesus/profil/spieler/363205
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:07:31.778151
+URL: https://www.transfermarkt.ru/ederson/profil/spieler/238223
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:07:31.782152
+URL: https://www.transfermarkt.ru/ederson/profil/spieler/238223
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:07:33.610232
+URL: https://www.transfermarkt.ru/zack-steffen/profil/spieler/221624
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:07:33.620220
+URL: https://www.transfermarkt.ru/zack-steffen/profil/spieler/221624
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:07:35.620389
+URL: https://www.transfermarkt.ru/scott-carson/profil/spieler/14555
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:07:35.634391
+URL: https://www.transfermarkt.ru/scott-carson/profil/spieler/14555
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:07:37.263897
+URL: https://www.transfermarkt.ru/ruben-dias/profil/spieler/258004
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:07:37.276885
+URL: https://www.transfermarkt.ru/ruben-dias/profil/spieler/258004
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:07:38.884959
+URL: https://www.transfermarkt.ru/aymeric-laporte/profil/spieler/176553
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:07:38.895961
+URL: https://www.transfermarkt.ru/aymeric-laporte/profil/spieler/176553
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:07:40.618643
+URL: https://www.transfermarkt.ru/nathan-ake/profil/spieler/177476
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:07:40.631638
+URL: https://www.transfermarkt.ru/nathan-ake/profil/spieler/177476
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:07:42.193383
+URL: https://www.transfermarkt.ru/john-stones/profil/spieler/186590
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:07:42.203377
+URL: https://www.transfermarkt.ru/john-stones/profil/spieler/186590
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:07:43.907393
+URL: https://www.transfermarkt.ru/oleksandr-zinchenko/profil/spieler/203853
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:07:43.917795
+URL: https://www.transfermarkt.ru/oleksandr-zinchenko/profil/spieler/203853
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:07:45.483948
+URL: https://www.transfermarkt.ru/benjamin-mendy/profil/spieler/157495
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:07:45.492951
+URL: https://www.transfermarkt.ru/benjamin-mendy/profil/spieler/157495
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:07:47.111890
+URL: https://www.transfermarkt.ru/joao-cancelo/profil/spieler/182712
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:07:47.123893
+URL: https://www.transfermarkt.ru/joao-cancelo/profil/spieler/182712
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:07:48.819715
+URL: https://www.transfermarkt.ru/kyle-walker/profil/spieler/95424
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:07:48.828704
+URL: https://www.transfermarkt.ru/kyle-walker/profil/spieler/95424
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:07:50.567813
+URL: https://www.transfermarkt.ru/rodri/profil/spieler/357565
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:07:50.577823
+URL: https://www.transfermarkt.ru/rodri/profil/spieler/357565
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:07:52.236742
+URL: https://www.transfermarkt.ru/fernandinho/profil/spieler/26267
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:07:52.247744
+URL: https://www.transfermarkt.ru/fernandinho/profil/spieler/26267
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:07:53.997044
+URL: https://www.transfermarkt.ru/phil-foden/profil/spieler/406635
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:07:54.008047
+URL: https://www.transfermarkt.ru/phil-foden/profil/spieler/406635
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:07:55.620205
+URL: https://www.transfermarkt.ru/ilkay-gundogan/profil/spieler/53622
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:07:55.632207
+URL: https://www.transfermarkt.ru/ilkay-gundogan/profil/spieler/53622
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:07:57.477758
+URL: https://www.transfermarkt.ru/kevin-de-bruyne/profil/spieler/88755
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:07:57.487756
+URL: https://www.transfermarkt.ru/kevin-de-bruyne/profil/spieler/88755
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:07:59.221218
+URL: https://www.transfermarkt.ru/bernardo-silva/profil/spieler/241641
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:07:59.232220
+URL: https://www.transfermarkt.ru/bernardo-silva/profil/spieler/241641
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:08:00.911736
+URL: https://www.transfermarkt.ru/cole-palmer/profil/spieler/568177
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:08:00.921746
+URL: https://www.transfermarkt.ru/cole-palmer/profil/spieler/568177
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:08:02.624660
+URL: https://www.transfermarkt.ru/jack-grealish/profil/spieler/203460
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:08:02.633657
+URL: https://www.transfermarkt.ru/jack-grealish/profil/spieler/203460
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:08:04.389164
+URL: https://www.transfermarkt.ru/raheem-sterling/profil/spieler/134425
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:08:04.398152
+URL: https://www.transfermarkt.ru/raheem-sterling/profil/spieler/134425
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:08:06.090219
+URL: https://www.transfermarkt.ru/ferran-torres/profil/spieler/398184
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:08:06.101235
+URL: https://www.transfermarkt.ru/ferran-torres/profil/spieler/398184
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:08:07.679821
+URL: https://www.transfermarkt.ru/riyad-mahrez/profil/spieler/171424
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:08:07.690815
+URL: https://www.transfermarkt.ru/riyad-mahrez/profil/spieler/171424
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:08:09.258797
+URL: https://www.transfermarkt.ru/kayky/profil/spieler/668265
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:08:09.267790
+URL: https://www.transfermarkt.ru/kayky/profil/spieler/668265
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)
+##########################
+2021-11-23 15:08:11.009462
+URL: https://www.transfermarkt.ru/gabriel-jesus/profil/spieler/363205
+Функция: get_birthday
+Ошибка типа: NameError.
+Аргументы: ("name 'DT' is not defined",)
+##########################
+2021-11-23 15:08:11.018464
+URL: https://www.transfermarkt.ru/gabriel-jesus/profil/spieler/363205
+Функция: get_death_date
+Ошибка типа: AttributeError.
+Аргументы: ("'NoneType' object has no attribute 'text'",)

@@ -160,16 +160,18 @@
       "photo": "https://img.a.transfermarkt.technology/portrait/header/238223-1474545573.jpg?lm=1",
       "first_name": "",
       "last_name": "Ederson",
-      "birthday": "1993-08-17",
+      "birthday": "1000-01-01",
       "death_date": "",
       "height": 188.0,
       "nation": [
         "Бразилия",
         "Португалия"
       ],
+      "position": "",
       "national_team": "Бразилия",
       "end_career": false,
       "free_agent": false,
+      "rent_from": "",
       "price": 50000000,
       "currency": "€"
     },
@@ -177,15 +179,17 @@
       "photo": "https://img.a.transfermarkt.technology/portrait/header/221624-1551259786.jpg?lm=1",
       "first_name": "Zack",
       "last_name": "Steffen",
-      "birthday": "1995-04-02",
+      "birthday": "1000-01-01",
       "death_date": "",
       "height": 191.0,
       "nation": [
         "Соединенные Штаты Америки"
       ],
+      "position": "",
       "national_team": "Соединенные Штаты Америки",
       "end_career": false,
       "free_agent": false,
+      "rent_from": "",
       "price": 6000000,
       "currency": "€"
     },
@@ -193,15 +197,17 @@
       "photo": "https://img.a.transfermarkt.technology/portrait/header/s_14555_1071_2013_09_26_1.jpg?lm=1",
       "first_name": "Scott",
       "last_name": "Carson",
-      "birthday": "1985-09-03",
+      "birthday": "1000-01-01",
       "death_date": "",
       "height": 188.0,
       "nation": [
         "Англия"
       ],
+      "position": "",
       "national_team": "Англия",
       "end_career": false,
       "free_agent": false,
+      "rent_from": "",
       "price": 300000,
       "currency": "€"
     },
@@ -209,15 +215,17 @@
       "photo": "https://img.a.transfermarkt.technology/portrait/header/258004-1572340728.jpg?lm=1",
       "first_name": "Rúben",
       "last_name": "Dias",
-      "birthday": "1997-05-14",
+      "birthday": "1000-01-01",
       "death_date": "",
       "height": 187.0,
       "nation": [
         "Португалия"
       ],
+      "position": "",
       "national_team": "Португалия",
       "end_career": false,
       "free_agent": false,
+      "rent_from": "",
       "price": 75000000,
       "currency": "€"
     },
@@ -225,16 +233,18 @@
       "photo": "https://img.a.transfermarkt.technology/portrait/header/176553-1564994239.jpg?lm=1",
       "first_name": "Aymeric",
       "last_name": "Laporte",
-      "birthday": "1994-05-27",
+      "birthday": "1000-01-01",
       "death_date": "",
       "height": 189.0,
       "nation": [
         "Франция",
         "Испания"
       ],
+      "position": "",
       "national_team": "Испания",
       "end_career": false,
       "free_agent": false,
+      "rent_from": "",
       "price": 45000000,
       "currency": "€"
     },
@@ -242,16 +252,18 @@
       "photo": "https://img.a.transfermarkt.technology/portrait/header/177476-1483877894.jpg?lm=1",
       "first_name": "Nathan",
       "last_name": "Aké",
-      "birthday": "1995-02-18",
+      "birthday": "1000-01-01",
       "death_date": "",
       "height": 180.0,
       "nation": [
         "Нидерланды",
         "Кот-д'Ивуар"
       ],
+      "position": "",
       "national_team": "Нидерланды",
       "end_career": false,
       "free_agent": false,
+      "rent_from": "",
       "price": 32000000,
       "currency": "€"
     },
@@ -259,15 +271,17 @@
       "photo": "https://img.a.transfermarkt.technology/portrait/header/186590-1583400326.jpg?lm=1",
       "first_name": "John",
       "last_name": "Stones",
-      "birthday": "1994-05-28",
+      "birthday": "1000-01-01",
       "death_date": "",
       "height": 188.0,
       "nation": [
         "Англия"
       ],
+      "position": "",
       "national_team": "Англия",
       "end_career": false,
       "free_agent": false,
+      "rent_from": "",
       "price": 30000000,
       "currency": "€"
     },
@@ -275,15 +289,17 @@
       "photo": "https://img.a.transfermarkt.technology/portrait/header/203853-1539784797.jpg?lm=1",
       "first_name": "Oleksandr",
       "last_name": "Zinchenko",
-      "birthday": "1996-12-15",
+      "birthday": "1000-01-01",
       "death_date": "",
       "height": 175.0,
       "nation": [
         "Украина"
       ],
+      "position": "",
       "national_team": "Украина",
       "end_career": false,
       "free_agent": false,
+      "rent_from": "",
       "price": 28000000,
       "currency": "€"
     },
@@ -291,16 +307,18 @@
       "photo": "https://img.a.transfermarkt.technology/portrait/header/157495-1598301159.jpg?lm=1",
       "first_name": "Benjamin",
       "last_name": "Mendy",
-      "birthday": "1994-07-17",
+      "birthday": "1000-01-01",
       "death_date": "",
       "height": 185.0,
       "nation": [
         "Франция",
         "Сенегал"
       ],
+      "position": "",
       "national_team": "Франция",
       "end_career": false,
       "free_agent": false,
+      "rent_from": "",
       "price": 10000000,
       "currency": "€"
     },
@@ -308,15 +326,17 @@
       "photo": "https://img.a.transfermarkt.technology/portrait/header/182712-1615221629.jpg?lm=1",
       "first_name": "João",
       "last_name": "Cancelo",
-      "birthday": "1994-05-27",
+      "birthday": "1000-01-01",
       "death_date": "",
       "height": 182.0,
       "nation": [
         "Португалия"
       ],
+      "position": "",
       "national_team": "Португалия",
       "end_career": false,
       "free_agent": false,
+      "rent_from": "",
       "price": 55000000,
       "currency": "€"
     },
@@ -324,15 +344,17 @@
       "photo": "https://img.a.transfermarkt.technology/portrait/header/95424-1583400627.jpg?lm=1",
       "first_name": "Kyle",
       "last_name": "Walker",
-      "birthday": "1990-05-28",
+      "birthday": "1000-01-01",
       "death_date": "",
       "height": 183.0,
       "nation": [
         "Англия"
       ],
+      "position": "",
       "national_team": "Англия",
       "end_career": false,
       "free_agent": false,
+      "rent_from": "",
       "price": 28000000,
       "currency": "€"
     },
@@ -340,15 +362,17 @@
       "photo": "https://img.a.transfermarkt.technology/portrait/header/357565-1556022958.jpg?lm=1",
       "first_name": "",
       "last_name": "Rodri",
-      "birthday": "1996-06-22",
+      "birthday": "1000-01-01",
       "death_date": "",
       "height": 191.0,
       "nation": [
         "Испания"
       ],
+      "position": "",
       "national_team": "Испания",
       "end_career": false,
       "free_agent": false,
+      "rent_from": "",
       "price": 70000000,
       "currency": "€"
     },
@@ -356,15 +380,17 @@
       "photo": "https://img.a.transfermarkt.technology/portrait/header/26267-1477040739.jpg?lm=1",
       "first_name": "",
       "last_name": "Fernandinho",
-      "birthday": "1985-05-04",
+      "birthday": "1000-01-01",
       "death_date": "",
       "height": 179.0,
       "nation": [
         "Бразилия"
       ],
+      "position": "",
       "national_team": "Бразилия",
       "end_career": false,
       "free_agent": false,
+      "rent_from": "",
       "price": 2000000,
       "currency": "€"
     },
@@ -372,15 +398,17 @@
       "photo": "https://img.a.transfermarkt.technology/portrait/header/406635-1594986905.jpg?lm=1",
       "first_name": "Phil",
       "last_name": "Foden",
-      "birthday": "2000-05-28",
+      "birthday": "1000-01-01",
       "death_date": "",
       "height": 171.0,
       "nation": [
         "Англия"
       ],
+      "position": "",
       "national_team": "Англия",
       "end_career": false,
       "free_agent": false,
+      "rent_from": "",
       "price": 80000000,
       "currency": "€"
     },
@@ -388,15 +416,17 @@
       "photo": "https://img.a.transfermarkt.technology/portrait/header/53622-1519915654.jpg?lm=1",
       "first_name": "Ilkay",
       "last_name": "Gündogan",
-      "birthday": "1990-10-24",
+      "birthday": "1000-01-01",
       "death_date": "",
       "height": 180.0,
       "nation": [
         "Германия"
       ],
+      "position": "",
       "national_team": "Германия",
       "end_career": false,
       "free_agent": false,
+      "rent_from": "",
       "price": 40000000,
       "currency": "€"
     },
@@ -404,15 +434,17 @@
       "photo": "https://img.a.transfermarkt.technology/portrait/header/88755-1626449012.jpg?lm=1",
       "first_name": "Kevin",
       "last_name": "De Bruyne",
-      "birthday": "1991-06-28",
+      "birthday": "1000-01-01",
       "death_date": "",
       "height": 181.0,
       "nation": [
         "Бельгия"
       ],
+      "position": "",
       "national_team": "Бельгия",
       "end_career": false,
       "free_agent": false,
+      "rent_from": "",
       "price": 100000000,
       "currency": "€"
     },
@@ -420,15 +452,17 @@
       "photo": "https://img.a.transfermarkt.technology/portrait/header/241641-1520189140.jpg?lm=1",
       "first_name": "Bernardo",
       "last_name": "Silva",
-      "birthday": "1994-08-10",
+      "birthday": "1000-01-01",
       "death_date": "",
       "height": 173.0,
       "nation": [
         "Португалия"
       ],
+      "position": "",
       "national_team": "Португалия",
       "end_career": false,
       "free_agent": false,
+      "rent_from": "",
       "price": 70000000,
       "currency": "€"
     },
@@ -436,15 +470,17 @@
       "photo": "https://img.a.transfermarkt.technology/portrait/header/568177-1557307836.png?lm=1",
       "first_name": "Cole",
       "last_name": "Palmer",
-      "birthday": "2002-05-06",
+      "birthday": "1000-01-01",
       "death_date": "",
       "height": 182.0,
       "nation": [
         "Англия"
       ],
+      "position": "",
       "national_team": "Англия",
       "end_career": false,
       "free_agent": false,
+      "rent_from": "",
       "price": 500000,
       "currency": "€"
     },
@@ -452,16 +488,18 @@
       "photo": "https://img.a.transfermarkt.technology/portrait/header/203460-1581417066.jpg?lm=1",
       "first_name": "Jack",
       "last_name": "Grealish",
-      "birthday": "1995-09-10",
+      "birthday": "1000-01-01",
       "death_date": "",
       "height": 180.0,
       "nation": [
         "Англия",
         "Ирландия"
       ],
+      "position": "",
       "national_team": "Англия",
       "end_career": false,
       "free_agent": false,
+      "rent_from": "",
       "price": 100000000,
       "currency": "€"
     },
@@ -469,16 +507,18 @@
       "photo": "https://img.a.transfermarkt.technology/portrait/header/134425-1577051521.jpg?lm=1",
       "first_name": "Raheem",
       "last_name": "Sterling",
-      "birthday": "1994-12-08",
+      "birthday": "1000-01-01",
       "death_date": "",
       "height": 170.0,
       "nation": [
         "Ямайка",
         "Англия"
       ],
+      "position": "",
       "national_team": "Англия",
       "end_career": false,
       "free_agent": false,
+      "rent_from": "",
       "price": 90000000,
       "currency": "€"
     },
@@ -486,15 +526,17 @@
       "photo": "https://img.a.transfermarkt.technology/portrait/header/398184-1620308050.jpg?lm=1",
       "first_name": "Ferran",
       "last_name": "Torres",
-      "birthday": "2000-02-29",
+      "birthday": "1000-01-01",
       "death_date": "",
       "height": 184.0,
       "nation": [
         "Испания"
       ],
+      "position": "",
       "national_team": "Испания",
       "end_career": false,
       "free_agent": false,
+      "rent_from": "",
       "price": 50000000,
       "currency": "€"
     },
@@ -502,16 +544,18 @@
       "photo": "https://img.a.transfermarkt.technology/portrait/header/171424-1461578220.jpg?lm=1",
       "first_name": "Riyad",
       "last_name": "Mahrez",
-      "birthday": "1991-02-21",
+      "birthday": "1000-01-01",
       "death_date": "",
       "height": 179.0,
       "nation": [
         "Франция",
         "Алжир"
       ],
+      "position": "",
       "national_team": "Алжир",
       "end_career": false,
       "free_agent": false,
+      "rent_from": "",
       "price": 42000000,
       "currency": "€"
     },
@@ -519,15 +563,17 @@
       "photo": "https://img.a.transfermarkt.technology/portrait/header/668265-1618220631.jpg?lm=1",
       "first_name": "",
       "last_name": "Kayky",
-      "birthday": "2003-06-11",
+      "birthday": "1000-01-01",
       "death_date": "",
       "height": 175.0,
       "nation": [
         "Бразилия"
       ],
+      "position": "",
       "national_team": "Бразилия",
       "end_career": false,
       "free_agent": false,
+      "rent_from": "",
       "price": 14000000,
       "currency": "€"
     },
@@ -535,15 +581,17 @@
       "photo": "https://img.a.transfermarkt.technology/portrait/header/363205-1533284263.jpg?lm=1",
       "first_name": "Gabriel",
       "last_name": "Jesus",
-      "birthday": "1997-04-03",
+      "birthday": "1000-01-01",
       "death_date": "",
       "height": 175.0,
       "nation": [
         "Бразилия"
       ],
+      "position": "",
       "national_team": "Бразилия",
       "end_career": false,
       "free_agent": false,
+      "rent_from": "",
       "price": 60000000,
       "currency": "€"
     }
@@ -559,5 +607,6 @@
     "8": "Левый Вингер",
     "9": "Правый Вингер",
     "10": "Центральный нап."
-  }
+  },
+  "nation": {}
 }

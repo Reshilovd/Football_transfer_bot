@@ -1,48 +1,15 @@
 import requests
 from bs4 import BeautifulSoup
-import datetime as DT
-import time
+from progress.bar import IncrementalBar
 from random import randrange
 import json
-from secondary_function import convert_price
-from secondary_function import getMonthByName
-from secondary_function import getFullURL
-from secondary_function import find_or_create
-from secondary_function import find_or_create_stadium
-from secondary_function import find_or_create_position
-from secondary_function import find_or_create_nation
-from secondary_function import club_init
-from secondary_function import headers
+from secondary_function import *
+from constants import *
+import datetime as dt
 
-store = {
-        'clubs': {
-
-        },
-        'clubs_link': {
-
-        },
-        'stadiums': {
-
-        },
-
-        'players_link': {
-
-        },
-
-        'players_info': {
-
-        },
-        'positions': {
-
-        },
-        'nation': {
-
-        }
-
-    }
-list_url = []
 
 def parsing_clubs_id_and_url(url, league_id):
+    time_start = dt.datetime.now()
     count_clubs = 0
     req = requests.get(url, headers=headers)
     src = req.text
@@ -58,8 +25,8 @@ def parsing_clubs_id_and_url(url, league_id):
             store['clubs_link'][id] = getFullURL(link)
             store['clubs'][id] = club_init(id)
             store['clubs'][id]['league_id'] = league_id
-
-    print(url, ': найдено ', count_clubs, ' клубов')
+    time_end = dt.datetime.now()
+    print(url, ': найдено ', count_clubs, ' клубов за ', str(time_end - time_start))
 
 def parsing_from_page_club(id, url):
     req = requests.get(url, headers=headers)
@@ -74,7 +41,7 @@ def parsing_from_page_club(id, url):
                 stadium_url = i.find('a').get('href')
                 stadium_name = i.find('a').text
         except Exception as ex:
-            print(ex)
+            pass
     store['clubs'][id]['name'] = name
     store['clubs'][id]['logo'] = logo
 
@@ -93,198 +60,33 @@ def parsing_from_page_club(id, url):
             id_player = url_player.split('/')[-1]
             store['players_link'][id_player] = url_player
         except Exception as ex:
-            print(ex)
+            pass
 
 def parsing_player_info(id, url):
-    store['players_info'][id] = {}
-    req = requests.get(url, headers=headers)
-    src = req.text
-    soup = BeautifulSoup(src, 'lxml')
     try:
-        try:
-            photo = soup.find(class_="modal-trigger").find('img').get('src')
+        store['players_info'][id] = {}
+        req = requests.get(url, headers=headers)
+        src = req.text
+        soup = BeautifulSoup(src, 'lxml')
 
-            store['players_info'][id]['photo'] = photo
-
-        except AttributeError:
-            print('take photo  not OK')
-            err = f'Фото не найдено: {url}'
-            store['players_info'][id]['photo'] = ''
-            print(err)
-
-        try:
-            name = soup.find(class_='dataName')
-            last_name = name.find('b').text
-            # first_name = ' '.join(name.find('h1').text.split()[:-1 * len(last_name.split())])
-            first_name = ' '.join(filter(lambda x: not x in last_name.split(), name.find('h1').text.split()))
-            store['players_info'][id]['first_name'] = first_name
-            store['players_info'][id]['last_name'] = last_name
-        except IndexError:
-            #Если только имя
-            store['players_info'][id]['first_name'] = ''
-            store['players_info'][id]['last_name'] = ''
-        except AttributeError:
-            #Если имя вообще нет
-            store['players_info'][id]['first_name'] = ''
-            store['players_info'][id]['last_name'] = ''
-
-            err = f'Имя не найдено: {url}'
-            print(err)
-
-        try:
-            birthday = soup.find(class_='dataValue').text.split()
-            day = birthday[0]
-            month = getMonthByName(birthday[1])
-            year = birthday[2]
-            date = year + month + day
-            date = DT.datetime.strptime(date, '%Y%m%d').date()
-            store['players_info'][id]['birthday'] = str(date)
-        except AttributeError:
-            store['players_info'][id]['birthday'] = '1000-01-01'
-
-            err = f'Дата рождения не найдена: {url}'
-            print(err)
-        except KeyError:
-            store['players_info'][id]['birthday'] = '1000-01-01'
-
-            err = f'Ошибка ключа: {url}'
-            print(err)
-        except TypeError:
-            store['players_info'][id]['birthday'] = '1000-01-01'
-
-            err = f'Ошибка типа: {url}'
-            print(err)
-
-
-        try:
-            death_date = soup.find(itemprop="deathDate").text.split()
-            del death_date[-1]
-            death_date = death_date[0]
-            death_date = death_date.split('.')
-            day = death_date[0]
-            month = death_date[1]
-            year = death_date[2]
-            date = year + month + day
-            date = DT.datetime.strptime(date, '%Y%m%d').date()
-            store['players_info'][id]['death_date'] = str(date)
-
-        except AttributeError:
-            err = f' {url}'
-            print(err)
-            store['players_info'][id]['death_date'] = ''
-
-
-        try:
-            height = soup.find(itemprop="height").text
-            height = height.replace(',','.').replace('м','')
-            height = float(height)*100
-            store['players_info'][id]['height'] = height
-
-        except AttributeError:
-            err = f' {url}'
-            store['players_info'][id]['height'] = ''
-            print(err)
-
-
-        try:
-            nation = soup.find(class_='info-table').find_all(class_='flaggenrahmen')
-            list_nation = []
-            for i in nation:
-                if not i.get('alt') in list_nation:
-                    list_nation.append(i.get('alt'))
-            # nation_id = find_or_create_nation()
-            store['nation'][id]['nation'] = list_nation
-            if len(list_nation) > 2:
-                err = f'Подозрительное количество наций {url}'
-                print(err)
-
-        except AttributeError:
-            store['players_info'][id]['nation'] = ''
-            err = f'Нация не найдена {url}'
-            print(err)
-
-        try:
-            position_name = soup.find(class_='detail-position__position').text
-            position_id = find_or_create_position(position_name)
-            store['positions'][position_id] = position_name
-
-        except Exception as ex:
-            store['players_info'][id]['position'] = ''
-            err = f'Позиция не найдена {url}'
-            print(ex, err)
-
-        try:
-            national_team = soup.find(class_='flaggenrahmen flagge').get('title')
-            store['players_info'][id]['national_team'] = national_team
-
-        except AttributeError:
-            err = f'Сборная не найдена: {url}'
-            print(err)
-
-
-        try:
-            status = soup.find(class_='hauptpunkt').text.strip()
-            if status == 'окончание':
-                store['players_info'][id]['end_career'] = True
-                store['players_info'][id]['free_agent'] = False
-            elif status == 'Без клуба':
-                store['players_info'][id]['end_career'] = False
-                store['players_info'][id]['free_agent'] = True
-            else:
-                store['players_info'][id]['end_career'] = False
-                store['players_info'][id]['free_agent'] = False
-
-        except AttributeError:
-            err = f'Не удалось определить статус игрока {url}'
-            print(err)
-            store['players_info'][id]['end_career'] = ''
-            store['players_info'][id]['free_agent'] = ''
-
-
-        try:
-            rent = soup.find(class_='info-table').find_all('span')
-            boll = False
-            for i in rent:
-                if boll:
-                    id = i.find('a').get('href')
-                    new_id = id.split('/')[-1]
-                    store['players_info'][id]['rent_from'] = new_id
-                    boll = False
-                if i.text == 'в аренде из:':
-                    boll = True
-
-        except AttributeError:
-            err = f'Не удалось найти из какого клуба пришел {url}'
-            print(err)
-            store['players_info'][id]['rent_from'] = ''
-
-
-        try:
-            price = soup.find(class_='right-td').text
-            price = convert_price(price)
-
-            store['players_info'][id]['price'] = price[0]
-            store['players_info'][id]['currency'] = price[1]
-        except AttributeError:
-            store['players_info'][id]['price'] = ''
-            store['players_info'][id]['currency'] = ''
-
-            err = f'Стоимость не найдена {url}'
-            print(err)
-
-        except ValueError:
-            store['players_info'][id]['price'] = ''
-            store['players_info'][id]['currency'] = ''
-
-            err = f'Стоимость не найдена {url}'
-            print(err)
+        get_photo(soup, url, id)
+        get_name(soup, url, id)
+        get_birthday(soup, url, id)
+        get_death_date(soup, url, id)
+        get_height(soup, url, id)
+        get_nation(soup, url, id)
+        get_position(soup, url, id)
+        get_nation_team(soup, url, id)
+        get_end_career_and_free_agent(soup, url, id)
+        get_rent_from(soup, url, id)
+        get_price_and_currency(soup, url, id)
 
     except Exception as ex:
         print(ex, url)
     time.sleep(randrange(1, 2))
 
 def main():
-
+    time_start = dt.datetime.now()
     leagues = json.load(open('leagues.json', 'r', encoding='utf-8'))
 
     for elem in leagues[:5]: #собираем id и url клубов со страниц лиг
@@ -292,14 +94,21 @@ def main():
         league_id = elem['key']
         parsing_clubs_id_and_url(url, league_id)
         break
-
+    time_start_players = dt.datetime.now()
     for id, url in store['clubs_link'].items(): #собираем данные со страниц клубов
         parsing_from_page_club(id, url)
         break
+    print('Найдено ', len(store['players_link']), ' игроков за ', str(dt.datetime.now() - time_start_players))
+
+    bar = IncrementalBar('Parsing players', max=len(store['players_link']))
 
     for id, url in store['players_link'].items():
         parsing_player_info(id, url)
+        bar.next()
 
+    bar.finish()
+    time_finish = dt.datetime.now()
+    print(str(time_finish-time_start))
 
     json.dump(store, open('clubs_and_players.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
 
