@@ -75,26 +75,26 @@ def parsing_from_page_club(id, url):
 
 def parsing_player_info(id, url):
     try:
-        store['players_info'][id] = {}
+        info = {}
         req = requests.get(url, headers=headers)
         src = req.text
         soup = BeautifulSoup(src, 'lxml')
-
-        get_photo(soup, url, id)
-        get_name(soup, url, id)
-        get_birthday(soup, url, id)
-        get_death_date(soup, url, id)
-        get_height(soup, url, id)
-        get_nation(soup, url, id)
-        get_position(soup, url, id)
-        get_nation_team(soup, url, id)
-        get_end_career_and_free_agent(soup, url, id)
-        get_rent_from(soup, url, id)
-        get_price_and_currency(soup, url, id)
+        info['photo'] = get_photo(soup, url, id)
+        info['first_name'], info['last_name'] = get_name(soup, url, id) or ['', '']
+        info['birthday'] = get_birthday(soup, url, id) or '1000-01-01'
+        info['death_date'] = get_death_date(soup, url, id)
+        info['height'] = get_height(soup, url, id)
+        info['end_career'], info['free_agent'] = get_end_career_and_free_agent(soup, url, id) or ['', '']
+        info['rent_from'] = get_rent_from(soup, url, id)
+        info['price'], info['currency'] = get_price_and_currency(soup, url, id) or ['', '']
+        for nation in get_nation(soup, url, id): store['nations_players'].add(nation)
+        store['positions_players'].add(get_position(soup, url, id))
+        store['national_team_players'].add(get_national_team(soup, url, id))
+        store['players_info'][id] = info
 
     except Exception as ex:
         print(ex, url)
-    time.sleep(randrange(1, 2))
+    # time.sleep(randrange(1, 2))
 
 def main():
     time_start = dt.datetime.now()
@@ -121,9 +121,13 @@ def main():
 
     bar = IncrementalBar('Parsing players', max=len(store['players_link']))
 
+    # c = 0
     for id, url in store['players_link'].items():
         parsing_player_info(id, url)
+        # c += 1
         bar.next()
+
+        # if c == 50: break
 
     bar.finish()
     time_finish = dt.datetime.now()

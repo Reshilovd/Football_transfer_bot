@@ -30,14 +30,10 @@ store = {'leagues': {
         'players_info': {
 
         },
-        'positions': {
-
-        },
+        'positions': [],
         'positions_players': set(),
 
-        'nation': {
-
-        },
+        'nation': [],
         'nations_players': set(),
 
         'national_team_players': set()
