@@ -41,6 +41,7 @@ store = {'leagues': {
 
     }
 
+leagues = []
 list_url = []
 stadium_list = []
 position_list = []

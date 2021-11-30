@@ -44,7 +44,7 @@ def from_store_to_table_clubs():
         try:
             for id in store['clubs']:
                 with connection.cursor() as cursor:
-                    sql = "INSERT INTO `clubs` (`id`, `club_name`, `logo`) VALUES (%s, %s, %s)"
+                    sql = "INSERT INTO `clubs` (`id`, `name`, `logo`) VALUES (%s, %s, %s)"
                     cursor.execute(sql, (int(id), store['clubs'][id]['name'], store['clubs'][id]['logo']))
                     print(f'Клуб с ID: {id} добавлен')
                     connection.commit()
@@ -68,7 +68,7 @@ def from_store_to_table_clubs_players():
             for i in store['clubs_players']:
                 with connection.cursor() as cursor:
                     sql = "INSERT INTO `clubs_players` (`club_id`, `player_id`, `current`) VALUES (%s, %s, %s)"
-                    cursor.execute(sql, (i[0], i[1], True))
+                    cursor.execute(sql, (i[0], i[1], i[2]))
                     print(f'Связь клуба ID: {i[0]} c игроком ID: {i[1]}  добавлена')
                     connection.commit()
         finally:
@@ -114,8 +114,8 @@ def from_store_to_table_leagues():
         try:
             for league_id in store['leagues']:
                 with connection.cursor() as cursor:
-                    sql = "INSERT INTO `leagues` (`id`, `league_name`, `logo`) VALUES (%s, %s, %s)"
-                    cursor.execute(sql, (league_id, store['leagues'][league_id]['league_name'], store['leagues'][league_id]['logo']))
+                    sql = "INSERT INTO `leagues` (`id`, `name`, `logo`) VALUES (%s, %s, %s)"
+                    cursor.execute(sql, (league_id, store['leagues'][league_id]['name'], store['leagues'][league_id]['logo']))
                     print(f'Лига ID: {league_id}  добавлена')
                     connection.commit()
         finally:

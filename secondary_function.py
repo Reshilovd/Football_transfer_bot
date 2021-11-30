@@ -2,6 +2,8 @@ import re
 from constants import *
 import datetime
 
+
+
 def getMonthByName(s):
     monthes = ['янв', 'фев', 'мар', 'апр', 'мая', 'июн', 'июл', 'авг', 'сен', 'окт', 'ноя', 'дек']
     nStr = s.lower().strip()
@@ -24,16 +26,16 @@ def find_or_create(list, name):
     return list.index(name)+1
 
 def find_or_create_position(position_name):
-    return find_or_create(store['positions'],position_name)
+    return find_or_create(store['positions'], position_name)
 
 def find_or_create_stadium(stadium_name):
-    return find_or_create(stadium_list,stadium_name)
+    return find_or_create(stadium_list, stadium_name)
 
 def find_or_create_nation(nation):
-    return find_or_create(store['nation'],nation)
+    return find_or_create(store['nation'], nation)
 
 def find_or_create_national_team(national_team):
-    return find_or_create(store['nation'],national_team)
+    return find_or_create(store['nation'], national_team)
 
 def club_init(id):
     return {
