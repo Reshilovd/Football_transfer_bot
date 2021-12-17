@@ -1,0 +1,27 @@
+select players.first_name,players.last_name, players.price as "Стоимость", clubs.name as "Клуб", leagues.name as "Лига"  from players
+inner join clubs_players on players.id = clubs_players.player_id
+inner join clubs on clubs_players.club_id = clubs.id
+inner join leagues_clubs on leagues_clubs.club_id = clubs.id
+inner join leagues on leagues_clubs.league_id = leagues.id
+where price > 80000000
+order by price desc
+
+
+
+select players.last_name, transfers.id as "ID трансфера", from_club.name as "Из клуба:", to_club.name as "В клуб:" from transfers
+inner join players on players.id = transfers.player_id
+inner join clubs from_club on from_club.id = transfers.from_club_id
+inner join clubs as to_club on to_club.id = transfers.to_club_id
+
+
+select players.first_name as "Имя", players.last_name as "Фамилия", transfers.id as "ID трансфера", from_club.name as "Из клуба", to_club.name as "В клуб", transfers.rent as "Аренда (1 - да, 0 - нет)", transfers.price as "Стоимость трансфера", transfers.currency as "Валюта" from transfers
+inner join players on players.id = transfers.player_id
+inner join clubs from_club on from_club.id = transfers.from_club_id
+inner join clubs as to_club on to_club.id = transfers.to_club_id
+where to_club.name = "Арсенал"
+order by transfers.price desc
+
+
+sql = "INSERT INTO  leagues_url (`url`, `type`, `is_parse`, `date_parse`) VALUES (%s, %s, %s, %s) ON DUPLICATE KEY UPDATE url = url"
+                    cursor.execute(sql, (league['url'], league['type'], league['is_parse'], league['date_parse']))
+                    connection.commit()

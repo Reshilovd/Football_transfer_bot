@@ -1,8 +1,20 @@
-подумать над местом рождения +
+проверить и поменять имена в бд и хранилищах(чтобы совпадали)
+добавить сезон в таблицу трансферов
+исправить ошибку next_sibling
 
-подозрительное колво наций +
 
-https://www.transfermarkt.ru/transfers/einnahmenausgaben/statistik/plus/1?ids=a&sa=&saison_id=2021&saison_id_bis=2021&land_id=189&nat=&kontinent_id=&pos=&altersklasse=&w_s=w&leihe=&intern=0&plus=1
-https://www.transfermarkt.ru/transfers/einnahmenausgaben/statistik/plus/1?ids=a&sa=&saison_id=2021&saison_id_bis=2021&land_id=189&nat=&kontinent_id=&pos=&altersklasse=&w_s=w&leihe=&intern=0&plus=1
+https://www.transfermarkt.ru/home/competition/RU1/
+# https://www.transfermarkt.ru/quickselect/players/131
+# https://www.transfermarkt.ru/quickselect/countries
+BLPW
 
-transfers.players_id
+
+IF NOT EXISTS ( SELECT 1 FROM Users WHERE FirstName = 'John' AND LastName = 'Smith' )
+BEGIN
+    INSERT INTO Users (FirstName, LastName) VALUES ('John', 'Smith')
+END
+
+
+
+
+функция которая парсит всю инфу полностью(все лиги, клубы, инфу о игроках), параметры: все лиги, с 1 по 5 лигу(например), конкретную лигу

@@ -2,9 +2,9 @@ import pymysql
 import json
 import datetime as dt
 
-store = json.load(open('store.json', 'r', encoding='utf-8'))
-print(type(store))
-leagues = json.load(open('leagues.json', 'r', encoding='utf-8'))
+store = json.load(open('json/store_L1.json', 'r', encoding='utf-8'))
+
+# leagues = json.load(open('leagues.json', 'r', encoding='utf-8'))
 
 
 def from_store_to_table_players():
@@ -89,7 +89,6 @@ def from_store_to_table_leagues_clubs():
 
         try:
             for league_id in store['leagues_clubs']:
-                print(league_id)
                 with connection.cursor() as cursor:
                     sql = "INSERT INTO `leagues_clubs` (`league_id`, `club_id`) VALUES (%s, %s)"
                     cursor.execute(sql, (league_id[0], league_id[1]))
@@ -285,20 +284,20 @@ def from_store_to_table_nations_players():
         print(ex)
 
 def main():
-    time_start = dt.datetime.now()
-    from_store_to_table_players()
-    from_store_to_table_clubs()
-    from_store_to_table_clubs_players()
-    from_store_to_table_leagues_clubs()
-    from_store_to_table_leagues()
-    from_store_to_table_stadiums()
+    # time_start = dt.datetime.now()
+    # from_store_to_table_players()
+    # from_store_to_table_clubs()
+    # from_store_to_table_clubs_players()
+    # from_store_to_table_leagues_clubs()
+    # from_store_to_table_leagues()
+    # from_store_to_table_stadiums()
     from_store_to_table_stadiums_clubs()
-    from_store_to_table_positions()
-    from_store_to_table_positions_players()
-    from_store_to_table_nations()
-    from_store_to_table_national_team_players()
-    from_store_to_table_nations_players()
-    time_finish = dt.datetime.now()
-    print('Загружено в базу данных ', len(store['players_link']), ' игроков за ', str(time_finish - time_start))
+    # from_store_to_table_positions()
+    # from_store_to_table_positions_players()
+    # from_store_to_table_nations()
+    # from_store_to_table_national_team_players()
+    # from_store_to_table_nations_players()
+    # time_finish = dt.datetime.now()
+    # print('Загружено в базу данных ', len(store['players_link']), ' игроков за ', str(time_finish - time_start))
 
 main()

@@ -248,13 +248,11 @@ def convert_price(price):
 def find_or_create_stadium(stadium_name):
     return find_or_create(stadium_list,stadium_name)
 
-
 def find_or_create(list, name):
     if name not in list:
         list.append(name)
 
     return list.index(name)+1
-
 
 
 parsing_player_info('https://www.transfermarkt.ru/antoine-griezmann/profil/spieler/125781')

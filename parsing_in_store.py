@@ -73,21 +73,14 @@ def parsing_from_page_club(id, url):
         req = requests.get(url, headers=headers)
         src = req.text
         soup = BeautifulSoup(src, 'lxml')
+
         name = soup.find(class_='dataBild').find('img').get('alt')
         logo = soup.find(class_='dataBild').find('img').get('src')
-        stadium_name = soup.find_all(class_='dataValue')
-        for i in stadium_name:
-            try:
-                if i.find('a').get('title') == name:
-                    stadium_url = i.find('a').get('href')
-                    stadium_name = i.find('a').text
-            except Exception as ex:
-                print(ex)
         store['clubs'][id]['name'] = name
         store['clubs'][id]['logo'] = logo
 
-
-        stadium_id = find_or_create_stadium(stadium_name)
+        stadium_name, stadium_url = get_stadium_name(soup)
+        stadium_id = get_stadium_id(stadium_name)
 
         store['stadiums'][stadium_id] = {}
         store['stadiums'][stadium_id]['name'] = stadium_name
@@ -133,38 +126,49 @@ def parsing_player_info(id, url):
     # time.sleep(randrange(1, 2))
 
 def main():
+
     time_start = dt.datetime.now()
-    get_pagination_leagues('https://www.transfermarkt.ru/wettbewerbe/europa')
-    parsing_leagues('https://www.transfermarkt.ru/wettbewerbe/europa')
-    print(store)
-    for league_id in store['leagues']: #собираем id и url клубов со страниц лиг
-        url = store['leagues'][league_id]['link']
-        parsing_clubs_id_and_url(url, league_id)
-        break
-    time_start_players = dt.datetime.now()
-    bar = IncrementalBar('Parsing clubs', max=len(store['clubs_link']))
-    for id, url in store['clubs_link'].items(): #собираем данные со страниц клубов
-        parsing_from_page_club(id, url)
-        bar.next()
+    # get_pagination_leagues('https://www.transfermarkt.ru/wettbewerbe/europa')
+    # parsing_leagues('https://www.transfermarkt.ru/wettbewerbe/europa')
+    #
+    # for league_id in store['leagues']: #собираем id и url клубов со страниц лиг
+    #     url = store['leagues'][league_id]['link']
+    #     parsing_clubs_id_and_url(url, league_id)
+    #
+    # time_start_players = dt.datetime.now()
+    # bar = IncrementalBar('Parsing clubs', max=len(store['clubs_link']))
+    # for id, url in store['clubs_link'].items(): #собираем данные со страниц клубов
+    #     parsing_from_page_club(id, url)
+    #
+    #     bar.next()
+    #
+    # bar.finish()
+    # print('Найдено ', len(store['players_link']), ' игроков за ', str(dt.datetime.now() - time_start_players))
+    #
+    # json.dump(store, open('C:\Football_transfer_bot\leagues_and_clubs.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False,
+    #           cls=MyEncoder)
 
-    bar.finish()
-    print('Найдено ', len(store['players_link']), ' игроков за ', str(dt.datetime.now() - time_start_players))
 
-    bar = IncrementalBar('Parsing players', max=len(store['players_link']))
+    data = json.load(open('C:\Football_transfer_bot\json\leagues_and_clubs.json', 'r', encoding='utf-8'))
 
-    # c = 0
-    for id, url in store['players_link'].items():
+    bar = IncrementalBar('Parsing players', max = 5)
+
+    c = 0
+    for id, url in data['players_link'].items():
         parsing_player_info(id, url)
-        # c += 1
+        c += 1
         bar.next()
+        time.sleep(1)
 
-        # if c == 50: break
+        if c == 5: break
 
     bar.finish()
     time_finish = dt.datetime.now()
-    print('Собрано ', len(store['players_link']), ' игроков за ', str(time_finish-time_start))
+    print('Собрано ', len(data['players_link']), ' игроков за ', str(time_finish-time_start))
 
-    print(store)
-    json.dump(store, open('store.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False, cls=MyEncoder)
+    json.dump(store, open('store.json', 'w', encoding='utf-8'), indent=2, ensure_ascii=False,
+              cls=MyEncoder)
+
+
 
 main()
